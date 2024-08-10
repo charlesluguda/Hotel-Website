@@ -19,21 +19,21 @@
     <div class="header-container">
         <div class="logo">Miranda <br> Hotel</div>
         <ul>
-            <li><a href="">Home</a></li>
-            <li><a href="">About</a></li>
-            <li><a href="">Room</a></li>
-            <li><a href="">Features</a></li>
-            <li><a href="">Menu</a></li>
-            <li><a href="">News</a></li>
+            <li><a href="index.html#home">Home</a></li>
+            <li><a href="index.html#aboutus">About</a></li>
+            <li><a href="index.html#room">Room</a></li>
+            <li><a href="index.html#feature">Features</a></li>
+            <li><a href="index.html#menus">Menu</a></li>
+            <li><a href="index.html#blogs">Blogs</a></li>
         </ul>
     </div>
    </header>
-   <section class="booking">
+   <section class="booking" id="home">
     <div class="booking-container">
         <div class="booking-details">
             <div class="sub-herader">ABOUT US</div>
             <div class="main-header">The Perfect <br> base For You</div>
-            <button class="btn">Take A Tour</button>
+            <button class="btn" type="submit">Take A Tour</button>
         </div>
     </div>
     <form action="/">
@@ -43,16 +43,16 @@
         </label>
         <label for="">
             Departure Date
-            <input type="text" placeholder="Your Departure Date">
+            <input type="date" placeholder="Your Departure Date">
         </label>
         <label for="">
             Guests
-            <input type="text" placeholder="No of Guests">
+            <input type="text" placeholder="Number of Guests">
         </label>
-        <input type="button" value="Check Availability">
+        <input type="submit" value="Check Availability">
     </form>
    </section>
-   <section class="about">
+   <section class="about" id="aboutus">
     <div class="section-container">
         <div class="about-grid">
             <div class="about-card">
@@ -77,13 +77,13 @@
             <p class="section_subheader">ABOUT US</p>
             <p class="section_header">Discover Our Underground</p>
             <p>Welcome to a hidden realm of extraordinary accommodations where luxury, comfort, and adventure converge. Our underground hotels offer an unparalleled escape from the ordinary, inviting you to explore a subterranean world of wonders.</p>
-            <button class="btn">Book Now</button>
+            <button class="btn" type="submit">Book Now</button>
         </div>
     </div>
    </section>
-   <section class="rooms">
+   <section class="rooms" id="room">
     <div class="rooms-container">
-        <div class="sub-herader">ABOUT US</div>
+        <div class="sub-herader">ROOMS</div>
         <div class="main-header">Hand Picked Rooms</div>  
         <div class="rooms-grid">
             <div class="room-box">
@@ -115,7 +115,7 @@
             <div class="sub-herader">INTRO VIDEO</div>
             <h2>Meet With Our Luxury Place</h2>
             <p>Whether you're seeking a cozy and exclusive hideaway or an immersive journey beneath the surface, Hotel Miranda promises to be an unforgettable stay, where the depths of comfort and excitement await your arrival.</p>
-            <button class="btn">Take A Tour</button>
+            <button class="btn" type="submit">Take A Tour</button>
         </div>
         <div class="intro-video">
             <video autoplay loop muted>
@@ -125,7 +125,7 @@
        </div>
     </div>
    </section>
-   <section class="features">
+   <section class="features" id="feature">
     <div class="sub-herader">FACILITIES</div>
     <h1>Core Features</h1>
     <div class="features-container">
@@ -161,7 +161,7 @@
         </div>
     </div>
    </section>
-   <section class="menu">
+   <section class="menu" id="menus">
     <div class="menu-container">
         <div class="sub-herader">MENU</div>
         <h1>Our Food Menu</h1>
@@ -217,7 +217,7 @@
     </div>
 
    </section>
-   <!-- <section class="blog">
+   <section class="blog" id="blogs">
     <div class="blog-container">
         <div class="sub-herader">BLOG</div>
         <h1>Our News Feed</h1>
@@ -252,8 +252,8 @@
         </div>
     </div>
 
-   </section> -->
-   <!-- <section class="footer">
+   </section>
+   <section class="footer">
     <div class="footer-container">
         <div class="footer-details">
             <h3>HOTEL <br>MIRANDA</h3>
@@ -277,8 +277,8 @@
         <div class="footer-details">
             <h3>Contact Us</h3>
             <div class="contacts-us">
-                <h5><i class="bi bi-telephone"></i>Phone number</h5>
-                <p>+255 23 345 109 000</p>
+                <h5><i class="bi bi-telephone"></i>Phone</h5>
+                <p>+255 723 345 109</p>
 
                 <h5><i class="bi bi-envelope"></i>Email</h5>
                 <p>abc@gmail.com</p>
@@ -286,6 +286,6 @@
         </div>
     </div>
    </section>
-    <script src="app.js"></script> -->
+    <script src="app.js"></script>
 </body>
 </html>

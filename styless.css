@@ -14,6 +14,8 @@
 header{
     width: 100%;
     height: 80px;
+    position: fixed;
+    z-index: 1;
     background: var(--background-color);
 }
 header .header-container{
@@ -82,6 +84,7 @@ header .header-container{
 .booking{
     width: 100%;
     height: 1000px;
+    padding-top: 80px;
 }
 .booking-container{
     width: 100%;
@@ -143,7 +146,7 @@ form label{
     text-align: center;
 }
 form input{
-    width: 250px;
+    width: 90%;
     padding: 10px 10px;
     border-radius: 5px;
     background: transparent;
@@ -151,9 +154,11 @@ form input{
     margin: 10px 10px;
     border-bottom: 2px solid var(--text-white);
 }
-form input[type="button"]{
+form input[type="submit"]{
     width: 250px;
-    height: 50px;
+    height: 40px;
+    padding: 10px 10px;
+    margin-top: 30px;
     background: var(--text-hover);
     color: var(--text-white);
     border: none;
@@ -161,7 +166,9 @@ form input[type="button"]{
 }
 form input[type = "date"]{
     color: var(--sub-background);
-    opacity: 0.3;
+    /* opacity: 0.3; */
+    /* width: 100%; */
+    border: 2px solid var(--text-white);
 }
 
 /*================================= BOOKING SECTION RESPONSIVENESS ====================================*/
@@ -234,6 +241,7 @@ form input[type = "date"]{
 .about{
     width: 100%;
     height: 700px;
+    padding-top: 80px;
 }
 .section-container{
     width: 90%;
@@ -380,10 +388,12 @@ form input[type = "date"]{
     }
 }
 
-/*================================ROOM SECTION STYLE ===============================*/
+/*================================ ROOM SECTION STYLE ===============================*/
+
 .rooms{
     width: 100%;
     height: auto;
+    padding-top: 80px;
 }
 .rooms-container{
     width: 90%;
@@ -480,6 +490,7 @@ form input[type = "date"]{
 }
 
 /* ========================== ROOM SECTION  RESPONSIVENESS STYLE =================================*/
+
 @media only screen and (max-width: 1230px){
     .rooms-grid .room-box img{
         width: 100%;
@@ -527,13 +538,14 @@ form input[type = "date"]{
 }
 
 /* ====================================== FEATURES SECTION STYLE =====================================*/
+
 .features{
     width: 100%;
     height: 600px;
     background: var(--text-white);
     text-align: center;
     justify-content: center;
-    padding-top: 70px;
+    padding-top: 80px;
 }
 .features .sub-herader{
     margin: 10px 10px;
@@ -554,7 +566,6 @@ form input[type = "date"]{
     margin: auto;
 }
 .features-container .feature-box{
-    /* width: 400px; */
     text-align: left;
     height: 150px;
 }
@@ -598,10 +609,11 @@ form input[type = "date"]{
 
 
 /* ==================================== MENU SECTION STYLE =====================================*/
+
 .menu{
     width: 100%;
     height: 900px;
-    padding-top: 50px;
+    padding-top: 80px;
     background: #edf5ef;
 }
 .menu-container{
@@ -619,7 +631,6 @@ form input[type = "date"]{
 }
 .menu-box{
     margin-top: 30px;
-    /* display: grid; */
     justify-content: center;
     display: grid;
     grid-template-columns: repeat(2, 1fr); 
@@ -628,7 +639,6 @@ form input[type = "date"]{
 }
 .menu-list{
     display: flex;
-    /* width: 500px; */
     cursor: pointer;
 }
 .menu-list:hover{
@@ -663,7 +673,6 @@ form input[type = "date"]{
 }
 .menu-img img{
     width:300px;
-    /* width: auto; */
     height: 300px;
     border-radius: 5px;
     box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.2);
@@ -673,24 +682,55 @@ form input[type = "date"]{
     .menu-img img{
         width:270px;
         height: 270px;
-        /* width: auto; */
     }
 }
 @media only screen and (max-width: 885px){
     .menu-img img{
         width:250px;
         height: 250px;
-        /* width: auto; */
+    }
+}
+@media only screen and (max-width: 786px){
+    .menu-img img{
+        width:230px;
+        height: 230px;
+    }
+}
+@media only screen and (max-width: 720px){
+    .menu-img img{
+        width:210px;
+        height: 210px;
+    }
+}
+@media only screen and (max-width: 660px){
+    .menu{
+        height: auto;
+    }
+    .menu-img{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    .menu-img img{
+        width:100%;
+        height: auto;
+    }
+}
+@media only screen and (max-width: 620px){
+    .menu-box{
+        display: grid;
+        grid-template-columns: 1fr; 
     }
 }
 
-/*BLOG SECTION STYLE */
+/*==================================== BLOG SECTION STYLE ========================================*/
+
 .blog{
     width: 100%;
     height: 750px;
+    padding-top: 80px;
 }
 .blog-container{
-    width: 80%;
+    width: 90%;
     margin: auto;
 }
 .blog-container .sub-herader{
@@ -707,12 +747,11 @@ form input[type = "date"]{
 .blog-news{
     display: grid;
     justify-content: center;
-    display: grid;
     grid-template-columns: repeat(3, 1fr); 
-    gap: 20px; 
+    gap: 10px; 
 }
 .blog-box img{
-    width: 400px;
+    width: 100%;
     height: 300px;
     border-radius: 5px;
     box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.2);
@@ -724,17 +763,60 @@ form input[type = "date"]{
     display: flex;
 }
 .blog-box h2{
-    padding: 10px 10px;
-    font-size: 20px;
+    padding: 5px 10px;
+    font-size: 18px;
 }
 .blog-box p{
     color: var(--text-color);
-    padding: 10px 10px;
+    padding: 5px 10px;
 }
-/*BLOG SECTION STYLE */
+
+@media only screen and (max-width: 930px){
+    .blog-box img{
+        height: 270px;
+    }
+}
+@media only screen and (max-width: 885px){
+    .blog-box img{
+        height: 250px;
+    }
+}
+@media only screen and (max-width: 786px){
+    .blog-box img{
+        height: 230px;
+    }
+}
+@media only screen and (max-width: 720px){
+    .blog-box img{
+        height: 210px;
+    }
+}
+@media only screen and (max-width: 660px){
+    .blog{
+        height: auto;
+    }
+    .blog-news{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    .blog-box img{
+        width:100%;
+        height: auto;
+    }
+}
+@media only screen and (max-width: 620px){
+    .blog-news{
+        display: grid;
+        grid-template-columns: 1fr; 
+    }
+}
+
+/*==================================== FOOTER SECTION STYLE ==========================================*/
+
 .footer{
     width: 100%;
     height: 500px;
+    padding-top: 50px;
     background: var(--background-color);
     display: flex;
     align-items: center;
@@ -748,7 +830,6 @@ form input[type = "date"]{
     display: grid;
     display: grid;
     grid-template-columns: repeat(3, 1fr); 
-    gap: 20px; 
 }
 .footer-details{
     padding: 10px 10px;
@@ -757,26 +838,23 @@ form input[type = "date"]{
 }
 .footer-details h3{
     padding: 10px 10px;
+    font-size: 18px;
     font-family: 'DM Serif Display', serif;
+}
+.footer-details p, a{
+    font-size: 15px;
+}
+.footer-details h5 i{
+    font-size: 13px;
 }
 .footer-details p{
     padding: 10px 10px;
 }
 .footer-details .social-links{
     padding: 10px 10px;
-    font-size: 24px;
+    font-size: 15px;
     margin: 10px 10px;
     gap: 30px;
-}
-.social-links i{
-    width: 250px;
-    height: 0px;
-    justify-content: center;
-    text-align: center;
-    background: white;
-    color: black;
-    border-radius: 50%;
-    padding: 10px 10px;
 }
 .footer-details .social-links i:hover{
     background: var(--text-hover);
@@ -797,10 +875,20 @@ form input[type = "date"]{
 }
 .contacts-us i{
     padding: 10px 10px;
-    font-size: 24px;
+    font-size: 20px;
     color: var(--text-hover);
 }
 .contacts-us h5{
     font-size: 18px;
     font-family: 'DM Serif Display', serif;
+}
+
+@media only screen and (max-width: 620px){
+    .footer{
+        height: auto;
+    }
+    .footer-container{
+        display: grid;
+        grid-template-columns: 1fr; 
+    }
 }
